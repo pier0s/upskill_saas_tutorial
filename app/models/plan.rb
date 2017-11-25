@@ -1,2 +1,3 @@
-Plan.create(name: 'basic', price: 0)
-Plan.create(name: 'pro', price: 10)
+class Plan < ActiveRecord::Base
+  has_many :users
+end
